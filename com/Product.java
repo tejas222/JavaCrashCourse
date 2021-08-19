@@ -51,18 +51,18 @@ public class Product {
 		price = (p*price)/100;
 	}
 
-	void addDiscountCode(String discountCode){
-//		String discountCode;
-//		System.out.println("Enter Product coupon : " );
-//		discountCode = sc.next();
+	void addDiscountCode(){
+		
+		System.out.println("Enter Product coupon : " );
+		coupon = sc.next();
 	
-		if (discountCode == "SUPPER50OFF") {
+		if (coupon.equals("SUPPER50OFF")) {
 			super50();
 		}
-		if (discountCode == "SPRING20OFF") {
+		if (coupon.equals("SPRING20OFF")) {
 			spring20();
 		}
-		if (discountCode == "WINTER30OFF") {
+		if (coupon.equals("WINTER30OFF")) {
 			winter30();
 		}
 	 
@@ -81,7 +81,7 @@ public class Product {
 		Product p1 = new Product();
 		
 		p1.addProduct();
-		p1.addDiscountCode("SPRING20OFF");
+		p1.addDiscountCode();
 		p1.displayProduct();
 	}
 }
