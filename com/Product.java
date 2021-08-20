@@ -45,6 +45,7 @@ public class Product {
 		double p = 100 - 20;
 		price = (p*price)/100;
 	}
+	
 	void winter30() {
 		
 		double p = 100 - 30;
