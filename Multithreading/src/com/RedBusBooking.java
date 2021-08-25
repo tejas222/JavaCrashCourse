@@ -4,10 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-
-
-
- class Passenger {
+class Passenger {
 	 int seates = 0;
 	 ArrayList<String> list = new ArrayList<>();
 }
@@ -46,8 +43,6 @@ public class RedBusBooking implements Runnable {
 		 
 		 int numberOfSeats = Seats;
 		
-		 
-	 
 		if(s.size() < numberOfSeats || numberOfSeats > 2) {
 			System.out.println("You can book max 2 seats");
 			return;
